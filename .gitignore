@@ -6,6 +6,9 @@ yarn-error.log
 # vscode
 .vscode
 
+# webstrom
+.idea
+
 #yarn
 yarn.lock
 
