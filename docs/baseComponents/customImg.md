@@ -8,22 +8,31 @@ permalink: /pages/5a8795/
 ## 概述
 我是组件的基本描述
 
+## 代码演示
+
 <CustomImgBaseDemo />
 
-## 代码演示
-代码演示环节
-
-## API
-组件 API
+## props
+| 参数  | 说明  | 类型  | 默认值  |
+| :------------ | :------------ | :------------ | :------------ |
+| loading  | 加载过程中占位图片地址  | string  |   |
+| error  | 加载失败展示图片地址  | string  |   |
+| mainImg  | 优先展示的图片地址  | string  |   |
+| subImg  | mainImg 加载失败会尝试加载第二展示的图片地址  | string  |   |
 
 ## 事件
-组件 事件
+| 事件名称  | 说明  | 回调函数  |
+| :------------ | :------------ | :------------ |
+| click  | 点击时回调  | function  |
+| renderFinish  | 加载结束时回调  | function(isLoadSuccess)  |
+| updateUrl | 加载成功时回调  | function(loadSuccessImgUrl)  |
 
 ## 插槽
-组件插槽
+无
 
 ## 设计思路
-组件 怎么实现的呢？
+* 当组件实例化后，根据 loading -> mainImg -> subImg 的顺序加载对应地址的图片
 
 ## todo(待优化)
-哎呀，开发快了，我还想优化一下几点呢
+* 重试次数通过 prop 传入
+* 宽高，通过 prop 传入
