@@ -13,6 +13,11 @@
     "vuepress-theme-vdoing": "^1.12.8"
   },
   "dependencies": {
-    "ant-design-vue": "1.7.6"
+    "ant-design-vue": "1.7.6",
+    "dayjs": "^1.11.5",
+    "vuepress-plugin-demo-block": "^0.7.2",
+    "vuepress-plugin-fulltext-search": "^2.2.1",
+    "vuepress-plugin-one-click-copy": "^1.0.6",
+    "vuepress-plugin-zooming": "^1.1.8"
   }
 }
