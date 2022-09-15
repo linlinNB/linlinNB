@@ -1,11 +1,7 @@
 ---
-title: index
-date: 2022-09-14 18:41:52
-permalink: /pages/e9c0a0/
-categories:
-  - baseComponents
-tags:
-  - 
+title: 基础组件
+date: 2022-09-15 13:49:32
+permalink: /pages/1f9b10/
 ---
 # 我是基础组件
 

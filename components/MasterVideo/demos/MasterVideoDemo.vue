@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import MasterVideo from "./MasterVideo";
+import MasterVideo from "../MasterVideo";
 export default {
   name: "MasterVideoDemo",
   components:{MasterVideo},

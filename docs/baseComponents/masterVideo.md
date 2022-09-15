@@ -7,7 +7,7 @@ categories:
 主控视频播放器
 
 ## 代码演示
-<MasterVideo-Demo/>
+<MasterVideoDemo/>
 ## API
 
 | 成员 | 说明 | 类型 | 默认值 | 版本 |
