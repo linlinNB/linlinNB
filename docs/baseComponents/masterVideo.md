@@ -14,7 +14,7 @@ categories:
 <<< @/components/MasterVideo/demos/MasterVideoDemo.vue
 :::
 
-## Props
+## props
 
 | 成员 | 说明 | 类型 | 默认值 |
 |--------|--| --- | --- |
@@ -39,6 +39,6 @@ categories:
 
 由于主控积压会导致图片访问失败，需要根据视频地址videoUrl和主控视频地址masterVideoUrl进行反复重试，成功显示视频，持续失败超过重试次数，停止请求，显示错误图片
 
-## Todo 待优化
+## todo(待优化)
 
 1.显示重试按钮
