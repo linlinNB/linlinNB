@@ -8,6 +8,12 @@ categories:
 
 ## 代码演示
 <MasterVideoDemo/>
+
+
+:::details 代码详情
+<<< @/components/MasterVideo/demos/MasterVideoDemo.vue
+:::
+
 ## Props
 
 | 成员 | 说明 | 类型 | 默认值 |
