@@ -3,6 +3,7 @@ const {
   navbarZh,
   sidebarZh,
 } = require('./configs/index.js')
+const docsLoader = require.resolve('./plugins/docsLoader.js')
 
 module.exports = {
   theme: 'vdoing',
@@ -62,6 +63,16 @@ module.exports = {
   },
   chainWebpack (config) {
     config.resolve.alias.set('core-js/library/fn', 'core-js/features');
+  },
+  configureWebpack: {
+    module: {
+      rules: [
+        {
+          resourceQuery: /blockType=docs/,
+          loader: docsLoader,
+        }
+      ]
+    }
   },
   plugins: [
     ['fulltext-search'],

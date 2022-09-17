@@ -10,6 +10,14 @@ const navbarZh = [
   {
     text: '业务组件',
     link: '/businessComponents/'
+  },
+  {
+    text: '规划',
+    link: '/plan/'
+  },
+  {
+    text: '参考',
+    link: '/reference/'
   }
 ]
 

@@ -1,17 +1,18 @@
+<docs>ni</docs>
+
 <template>
-  <CustomImg
-    :mainImg="mainImg"
-    :subImg="subImg"
-  />
+  <div>
+    <a-button>你好</a-button>
+    <CustomImg
+      :mainImg="mainImg"
+      :subImg="subImg"
+    />
+  </div>
 </template>
 
 <script>
-import CustomImg from '../index.vue'
 export default {
   name: 'CustomImgBaseDemo',
-  components: {
-    CustomImg
-  },
   data() {
     return {
       mainImg: "https://tse1-mm.cn.bing.net/th/id/OIP-C.n0_p3rYRuofABd3XudbZnAHaEo?pid=ImgDet&rs=1",
