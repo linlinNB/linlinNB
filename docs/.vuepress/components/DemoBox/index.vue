@@ -1,12 +1,12 @@
 <template>
   <div class="demo-box-wrapper">
     <div class="demo-box-title">
-      <span style="cursor: pointer">
+      <span class="header-main">
         <slot name="title">
           {{ title }}
         </slot>
       </span>
-      <span>
+      <span class="header-extra">
         <a-space>
           <a-tooltip title="复制代码">
             <a-icon @click="copy" type="copy" />
@@ -22,9 +22,7 @@
       <slot name="demo" />
     </div>
     <div class="demo-box-footer" v-show="codeShow">
-      <code>
-        {{ jsCode }}
-      </code>
+      {{ jsCode }}
     </div>
   </div>
 </template>
@@ -43,7 +41,7 @@ export default {
     },
     languageType: {
       type: String,
-      default: 'js'
+      default: 'javascript'
     }
   },
   data() {
@@ -69,15 +67,29 @@ export default {
 
 <style lang="less" scoped>
 .demo-box-wrapper {
+  margin: 5px 0;
+  border: 1px solid #ebedf0;
+  border-radius: 2px;
   .demo-box-title {
+    padding: 20px 24px;
+    font-size: 18px;
     display: flex;
     justify-content: space-between;
+    .header-main {
+      font-weight: 500;
+    }
+    .header-extra {
+      font-size: 14px;
+    }
   }
   .demo-box-content {
-
+    padding: 0 24px 20px;
+    .demo-wrapper {
+      margin-top: 16px;
+    }
   }
   .demo-box-footer {
-
+    border-top: 1px solid #ebedf0;
   }
 }
 </style>

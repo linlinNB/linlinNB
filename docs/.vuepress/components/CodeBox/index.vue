@@ -3,7 +3,22 @@
 </template>
 
 <script>
+import hljs from 'highlight.js'
 export default {
-  name: 'CodeBox'
+  name: 'CodeBox',
+  props: {
+    language: {
+      type: String,
+      default: ''
+    },
+    code: {
+      type: String,
+      default: ''
+    },
+    trim: {
+      type: Boolean,
+      default: true
+    }
+  }
 }
 </script>

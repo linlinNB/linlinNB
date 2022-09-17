@@ -19,6 +19,7 @@
   "dependencies": {
     "ant-design-vue": "1.7.6",
     "dayjs": "^1.11.5",
+    "highlight.js": "^11.6.0",
     "vuepress-plugin-demo-block": "^0.7.2",
     "vuepress-plugin-fulltext-search": "^2.2.1",
     "vuepress-plugin-one-click-copy": "^1.0.6",

@@ -1,5 +1,10 @@
 const { marked } = require('marked')
 
+/**
+ * 解析 markdown
+ * @param {*} markdownText 
+ * @returns 
+ */
 function transformMdToObj(markdownText) {
   let tempObj = {
     title: '',
@@ -41,7 +46,11 @@ function transformComToComp(comp) {
               innerHTML: marked.parse(markdownObj.content)
             },
           }),
-          demo: props => h(comp)
+          demo: props => h(comp, {
+            class: {
+              'demo-wrapper': true
+            }
+          })
         }
       })
     }
