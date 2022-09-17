@@ -50,7 +50,7 @@ module.exports = function (source, map) {
         null,
         `export default function (Component) {
           Component.options.__sourceCode = ${JSON.stringify(sourceCode)}
-          Component.options.__sourceCodeTitle = ${JSON.stringify(sourceCodeTitle)}
+          Component.options.__markdown = ${JSON.stringify(sourceCodeTitle)}
         }`,
         map
     )

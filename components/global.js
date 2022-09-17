@@ -1,9 +1,19 @@
+function transformComToComp(comp) {
+  return {
+    name: comp.name,
+    render(h) {
+      return h(comp)
+    }
+  }
+}
+
 function registerDemoComp(Vue) {
   const requireComponent = require.context('./', true, /\.vue$/)
   requireComponent.keys().forEach((ele) => {
     if (ele.includes('/demos/')) {
       const moduleObj = requireComponent(ele).default
-      Vue.component(moduleObj.name, moduleObj)
+      const comp = transformComToComp(moduleObj)
+      Vue.component(moduleObj.name, comp)
     }
   })
 }

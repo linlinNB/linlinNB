@@ -68,7 +68,7 @@ module.exports = {
     module: {
       rules: [
         {
-          resourceQuery: /blockType=docs/,
+          resourceQuery: /blockType=markdown/,
           loader: docsLoader,
         }
       ]

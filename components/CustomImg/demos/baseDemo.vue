@@ -1,4 +1,4 @@
-<docs>ni</docs>
+<markdown>ni</markdown>
 
 <template>
   <div>
