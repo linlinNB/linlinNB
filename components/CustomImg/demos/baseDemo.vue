@@ -1,8 +1,9 @@
-<markdown>ni</markdown>
+<markdown>
+# 基础用法
+</markdown>
 
 <template>
   <div>
-    <a-button>你好</a-button>
     <CustomImg
       :mainImg="mainImg"
       :subImg="subImg"

@@ -22,7 +22,9 @@
       <slot name="demo" />
     </div>
     <div class="demo-box-footer" v-show="codeShow">
-      
+      <code>
+        {{ jsCode }}
+      </code>
     </div>
   </div>
 </template>
@@ -46,8 +48,7 @@ export default {
   },
   data() {
     return {
-      codeShow: false,
-      codeSwitchText: '展示代码'
+      codeShow: false
     }
   },
   computed: {
@@ -56,6 +57,11 @@ export default {
         return '收起代码'
       }
       return '显示代码'
+    }
+  },
+  methods: {
+    copy() {
+
     }
   }
 }
