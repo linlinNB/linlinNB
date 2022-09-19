@@ -46,6 +46,8 @@ export default {
   padding: 0;
   .__code__ {
     margin: 0;
+    background-color: #FFFFFF;
+    padding: 0;
   }
 }
 </style>

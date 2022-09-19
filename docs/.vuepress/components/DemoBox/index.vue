@@ -12,7 +12,10 @@
             <a-icon @click="copy" type="copy" />
           </a-tooltip>
           <a-tooltip :title="codeSwitchText">
-            <a-icon @click="codeShow = !codeShow" type="copy" />
+            <span class="cursor-point" @click="codeShow = !codeShow">
+              <img v-show="!codeShow" width="16" src="/images/svg/code-hide.svg">
+              <img v-show="codeShow" width="16" src="/images/svg/code-show.svg">
+            </span>
           </a-tooltip>
         </a-space>
       </span>
@@ -100,6 +103,9 @@ export default {
   .demo-box-footer {
     border-top: 1px solid #ebedf0;
     padding: 20px 24px;
+  }
+  .cursor-point {
+    cursor: pointer;
   }
 }
 </style>
