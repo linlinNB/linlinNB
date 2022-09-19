@@ -22,14 +22,18 @@
       <slot name="demo" />
     </div>
     <div class="demo-box-footer" v-show="codeShow">
-      {{ jsCode }}
+      <CodeBox :language="languageType" :code="sfcJsCode" />
     </div>
   </div>
 </template>
 
 <script>
+import CodeBox from '../CodeBox/index.vue'
 export default {
   name: 'DemoBox',
+  components: {
+    CodeBox
+  },
   props: {
     title: {
       type: String,
@@ -41,7 +45,7 @@ export default {
     },
     languageType: {
       type: String,
-      default: 'javascript'
+      default: 'html'
     }
   },
   data() {
@@ -55,11 +59,16 @@ export default {
         return '收起代码'
       }
       return '显示代码'
+    },
+    sfcJsCode() {
+      return decodeURIComponent(this.jsCode)
     }
   },
   methods: {
     copy() {
-
+      navigator.clipboard.writeText(this.sfcJsCode).then(() => {
+        this.$message.success('复制成功')
+      })
     }
   }
 }
@@ -90,6 +99,7 @@ export default {
   }
   .demo-box-footer {
     border-top: 1px solid #ebedf0;
+    padding: 20px 24px;
   }
 }
 </style>
