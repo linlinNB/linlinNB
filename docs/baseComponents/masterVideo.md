@@ -7,12 +7,8 @@ categories:
 主控视频播放器
 
 ## 代码演示
+
 <MasterVideoDemo/>
-
-
-:::details 代码详情
-<<< @/components/MasterVideo/demos/MasterVideoDemo.vue
-:::
 
 ## props
 

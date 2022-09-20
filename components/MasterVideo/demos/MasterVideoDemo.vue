@@ -1,12 +1,15 @@
+<markdown>
+# 基础用法
+基础版本演示
+</markdown>
+
 <template>
   <master-video :src="feature.videoUrl" :sub-src="feature.masterVideoUrl"></master-video>
 </template>
 
 <script>
-import MasterVideo from "../MasterVideo";
 export default {
   name: "MasterVideoDemo",
-  components:{MasterVideo},
   data(){
     return {
       feature:{
