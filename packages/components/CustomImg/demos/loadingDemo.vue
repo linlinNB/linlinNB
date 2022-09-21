@@ -8,7 +8,7 @@ loading 演示
     <CustomImg
       :width="100"
       :height="100"
-      :loading="loading"
+      :loading="loadingImg"
       :mainImg="mainImg"
       :subImg="subImg"
     />
@@ -17,16 +17,19 @@ loading 演示
 </template>
 
 <script>
-import { defineComponent } from '@vue/composition-api'
+import { ref, defineComponent } from 'vue'
 import loadingImg from './loading.gif'
 export default defineComponent({
   name: 'CustomImgLoadingDemo',
-  data() {
+  setup() {
+    const setTimeoutTimer = null
+    const mainImg = ref('')
+    const subImg = ref('')
     return {
-      loading: loadingImg,
-      mainImg: '',
-      subImg: '',
-      setTimeoutTimer: null
+      setTimeoutTimer,
+      loadingImg,
+      mainImg,
+      subImg
     }
   },
   mounted() {
