@@ -3,6 +3,7 @@ const {
   navbarZh,
   sidebarZh,
 } = require('./configs/index.js')
+const path = require("path");
 const docsLoader = require.resolve('./plugins/docsLoader.js')
 
 module.exports = {
@@ -118,5 +119,5 @@ module.exports = {
   // 监听文件变化并重新构建
   extraWatchFiles: [
     '.vuepress/config.js',
-  ]
+  ],
 }

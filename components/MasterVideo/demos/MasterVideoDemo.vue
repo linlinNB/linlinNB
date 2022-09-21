@@ -4,7 +4,9 @@
 </markdown>
 
 <template>
-  <master-video :src="feature.videoUrl" :sub-src="feature.masterVideoUrl"></master-video>
+  <div>
+    <master-video :src="feature.videoUrl" :sub-src="feature.masterVideoUrl"></master-video>
+  </div>
 </template>
 
 <script>

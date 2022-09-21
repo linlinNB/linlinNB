@@ -9,6 +9,30 @@ const head = [
     },
   ],
   [
+    'link',
+    {
+      rel: 'stylesheet',
+      type: 'text/css',
+      href: `/iconfont/iconfont/iconfont.css`,
+    },
+  ],
+  [
+    'link',
+    {
+      rel: 'stylesheet',
+      type: 'text/css',
+      href: `/iconfont/iconfonts/iconfont.css`,
+    },
+  ],
+  [
+    'link',
+    {
+      rel: 'stylesheet',
+      type: 'text/css',
+      href: `/iconfont/font/index.css`,
+    },
+  ],
+  [
     'meta',
     {
       rel: 'icon',
