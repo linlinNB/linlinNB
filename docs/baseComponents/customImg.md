@@ -12,6 +12,8 @@ permalink: /pages/5a8795/
 
 <CustomImgBaseDemo />
 
+<CustomImgLoadingDemo />
+
 ## props
 | 参数  | 说明  | 类型  | 默认值  |
 | :------------ | :------------ | :------------ | :------------ |

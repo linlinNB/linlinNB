@@ -1,5 +1,6 @@
 <template>
   <img
+    :style="{width: pWidth, height: pHeight}"
     ref="img"
     @click="$emit('click')"
     @load="renderFinish()"
@@ -19,6 +20,14 @@
 export default {
   name: 'CustomImg',
   props: {
+    width: {
+      type: [String, Number],
+      default: 'auto'
+    },
+    height: {
+      type: [String, Number],
+      default: 'auto'
+    },
     loading: {
       type: String,
       default: ''
@@ -46,6 +55,20 @@ export default {
       count: 0,
       renderIsSuccess: true,
       lockRenderFinish: false
+    }
+  },
+  computed: {
+    pWidth() {
+      if(typeof this.width === 'string') {
+        return this.width
+      }
+      return `${this.width}px`
+    },
+    pHeight() {
+      if(typeof this.height === 'string') {
+        return this.height
+      }
+      return `${this.height}px`
     }
   },
   watch: {
