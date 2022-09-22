@@ -18,9 +18,6 @@ const navbarZh = [
   {
     text: '参考',
     link: '/reference/'
-  },
-  {
-    text:'主题'
   }
 ]
 
