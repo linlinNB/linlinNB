@@ -3,8 +3,6 @@ title: 图片 CustomImg
 date: 2022-09-14 18:41:52
 permalink: /pages/5a8795/
 ---
-# 图片 CustomImg
-
 ## 概述
 我是组件的基本描述
 

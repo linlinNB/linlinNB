@@ -2,9 +2,7 @@
 title: MasterVideo
 date: 2022-09-14 18:41:52
 permalink: /pages/074ed8/
-categories:
 ---
-主控视频播放器
 
 ## 代码演示
 
