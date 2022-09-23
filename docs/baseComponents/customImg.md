@@ -36,3 +36,6 @@ permalink: /pages/5a8795/
 ## todo(待优化)
 * 重试次数通过 prop 传入
 * 宽高，通过 prop 传入
+
+## 升级估算(vue2.6.10 -> vue3; 依赖)
+升级 vue3 耗费成本 预估
