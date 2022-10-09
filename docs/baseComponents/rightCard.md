@@ -8,6 +8,7 @@ permalink: /pages/fbc731/
 小卡片组件
 
 ## 代码演示
+<RightCardBasicDemo/>
 ## props
 ### RightCard 配置
 | 成员               | 说明        | 类型      | 默认值    |
