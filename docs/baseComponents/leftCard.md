@@ -9,6 +9,10 @@ permalink: /pages/d8b136/
 卡片组件
 
 ## 代码演示
+<LeftCardBasicDemo/>
+<LeftCardActionDemo/>
+<LeftCardStyleDemo/>
+<LeftCardSlotDemo/>
 ## props
 ### LeftCard 配置
 | 成员               | 说明                                      | 类型       | 默认值       |
