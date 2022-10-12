@@ -1,0 +1,10 @@
+version: '1'
+services:
+  watrix-ui-docs:
+    build:
+      context: docker
+      restart: always
+      container_name: watrix-ui-docs
+      image: watrix-ui-docs
+      ports:
+        - 8080:80
