@@ -30,8 +30,6 @@ const handlerSource = (source) => {
  * ... ...
  * 想到另外一个依赖 @vue/compiler-sfc 也是用来解析*.vue文件的
  * 于是就尝试一下，发现没有报错，就是结果有点不一样 简单处理一下就可以了
- * @updateBy 谭上彪
- * @date 2021年12月17日14:41:33
  * @param source
  * @param map
  */

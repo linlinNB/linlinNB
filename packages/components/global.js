@@ -37,8 +37,8 @@ function transformComToComp(comp) {
     render(h, ctx) {
       return h('DemoBox', {
         props: {
-          title: markdownObj.title,
-          jsCode: comp.__sourceCode
+          title: markdownObj.title || '',
+          jsCode: comp.__sourceCode || ''
         },
         scopedSlots: {
           content: props => h('div', {
