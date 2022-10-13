@@ -64,7 +64,7 @@ export default {
       return '显示代码'
     },
     sfcJsCode() {
-      return decodeURIComponent(this.jsCode)
+      return this.jsCode
     }
   },
   methods: {
