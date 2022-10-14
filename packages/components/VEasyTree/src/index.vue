@@ -3,7 +3,7 @@
   <div class="ve-tree">
     <!-- Just remove the height parameter when not using virtual scrolling -->
     <!-- height="calc(100vh - 20px)" -->
-    <vue-easy-tree
+    <!-- <vue-easy-tree
       ref="veTree"
       v-bind="$attrs"
       v-on="$listeners"
@@ -66,17 +66,17 @@
           </span>
         </div>
       </template>
-    </vue-easy-tree>
+    </vue-easy-tree> -->
   </div>
 </template>
 
 <script>
-import VueEasyTree from "@linxl/vue-virtual-tree";
+// import VueEasyTree from "@linxl/vue-virtual-tree";
 // import '@wchbrad/vue-easy-tree/src/assets/index.scss'
 import deepClone from "lodash/cloneDeep";
 export default {
   name: "VEasyTree",
-  components: { VueEasyTree },
+  // components: { VueEasyTree },
   props: {
     treeData: {
       type: Array,
