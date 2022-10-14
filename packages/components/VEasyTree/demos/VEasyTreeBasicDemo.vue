@@ -1,3 +1,6 @@
+<markdown>
+# 基础示例
+</markdown>
 <template>
   <div>
     <v-easy-tree
