@@ -1,5 +1,5 @@
 ---
-title: vEasyTree
+title: 树组件 vEasyTree
 date: 2022-10-12 11:26:44
 permalink: /pages/8b9fbf/
 ---
@@ -57,3 +57,8 @@ permalink: /pages/8b9fbf/
 
 该树的实现来自 element-ui 官方文档 https://element.eleme.cn/#/zh-CN/component/tree
 需要使用虚拟滚动时，增加 treeHeight 属性，且必须设置 node-key
+
+## 升级估算(vue2.6.10 -> vue3; 依赖)
+
+升级 vue3 耗费成本 预估
+升为 vue3 之后，可以直接使用 ant-design-vue 3 中的树组件，到时这个基于 element 的树组件将被废弃
