@@ -3,8 +3,7 @@
   <div class="ve-tree">
     <!-- Just remove the height parameter when not using virtual scrolling -->
     <!-- height="calc(100vh - 20px)" -->
-    <component
-      v-if="dynamicComponent" :is="dynamicComponent"
+    <vue-easy-tree
       ref="veTree"
       v-bind="$attrs"
       v-on="$listeners"
@@ -67,19 +66,17 @@
           </span>
         </div>
       </template>
-    </component>
+    </vue-easy-tree>
   </div>
 </template>
 
 <script>
-// import VueEasyTree from "@linxl/vue-virtual-tree";
+import VueEasyTree from "@linxl/vue-virtual-tree";
 // import '@wchbrad/vue-easy-tree/src/assets/index.scss'
 import deepClone from "lodash/cloneDeep";
 export default {
   name: "VEasyTree",
-  // components: {
-  //   VueEasyTree
-  // },
+  components: { VueEasyTree },
   props: {
     treeData: {
       type: Array,
@@ -129,10 +126,9 @@ export default {
     return {
       defaultTreeData: [],
       defaultSelectedKey: "", // 选中的节点id
-      dynamicComponent: null
     };
   },
-  
+
   watch: {
     selectedKeys: {
       handler: function (val, oldVal) {
@@ -157,13 +153,7 @@ export default {
       immediate: true,
     },
   },
-  mounted() {
-    // 这样处理 @linxl/vue-virtual-tree 组件，为了解决 vuepress 打包时报错
-    // todo 当这个包支持 esm 时再做调整
-    import('@linxl/vue-virtual-tree').then(module => {
-      this.dynamicComponent = module.default
-    })
-  },
+
   methods: {
     // 遍历节点增加在第几层
     dealTreeData(treeList) {
