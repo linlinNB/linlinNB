@@ -32,18 +32,18 @@ permalink: /pages/63e7f7/
 | showSequenceCount         | 显示帧数                                     | Boolean  | 是         |
 | disabled         | 禁用                                       | Boolean  | 是         |
 ### LeftCardItem 配置
-| 成员               | 说明                                       | 类型       | 默认值       |
-|------------------|------------------------------------------|----------|-----------|
-| rowKey           | 主键                                       | String   | featrueId |
-| feature          | 数据源                                      | Object   | []        |
-| mainImgKey       | 主控图片地址                                   | String   ||
-| subImgKey        | 备用图片地址                                   | String   ||
-| action           | 卡片操作       参考action配置                    | Object   | {}        |
-| config           | 表单显示数据配置 参考config配置                      | Array    | []        |
-| changeConfig     | 用于进行配置修改                                 | Function ||
-| copyable         | 是否允许双击拷贝所在行内容(复制内容取值为原来的值或者render函数返回的值) | Boolean  | 是         |
-| disabled         | 禁用                                       | Boolean  | 是         |
-| showSequenceCount         | 显示帧数                                     | Boolean  | 是         |
+| 成员                | 说明                                       | 类型       | 默认值       |
+|-------------------|------------------------------------------|----------|-----------|
+| rowKey            | 主键                                       | String   | featrueId |
+| feature           | 数据源                                      | Object   | []        |
+| mainImgKey        | 主控图片地址                                   | String   ||
+| subImgKey         | 备用图片地址                                   | String   ||
+| actions           | 卡片操作       参考actions配置                   | Array    | []        |
+| config            | 表单显示数据配置 参考config配置                      | Array    | []        |
+| changeConfig      | 用于进行配置修改                                 | Function ||
+| copyable          | 是否允许双击拷贝所在行内容(复制内容取值为原来的值或者render函数返回的值) | Boolean  | 是         |
+| disabled          | 禁用                                       | Boolean  | 是         |
+| showSequenceCount | 显示帧数                                     | Boolean  | 是         |
 #### config 配置
 | 配置        | 说明                      | 类型 |默认值|
 |-----------|-------------------------|--|---|
@@ -77,10 +77,10 @@ permalink: /pages/63e7f7/
 | isBind | 绑定了 红色 |
 ## 事件
 
-| 事件名称            | 说明 | 回调参数     | 
-|-----------------|--------|----------|
-| previewItem     | 重新检测 | feature  |
-| selectItem    | 选择 | feature  |
+| 事件名称            | 说明              | 回调参数     | 
+|-----------------|-----------------|----------|
+| previewItem     | 预览              | feature  |
+| selectItem    | 选择              | feature  |
 | resetPagination | 重置页面个数返回最多请求的数目 | pageSize |
 
 
