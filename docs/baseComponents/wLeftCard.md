@@ -11,26 +11,27 @@ permalink: /pages/63e7f7/
 ## 代码演示
 ## props
 ### LeftCard 配置
-| 成员               | 说明                                       | 类型       | 默认值       |
-|------------------|------------------------------------------|----------|-----------|
-| rowKey           | 主键                                       | String   | featrueId |
-| dataSource       | 数据源                                      | Array    | []        |
-| mainImgKey       | 主控图片地址                                   | String   ||
-| subImgKey        | 备用图片地址                                   | String   ||
-| actions           | 卡片操作       参考actions配置                   | Array    | []        |
-| config           | 表单显示数据配置 参考config配置                      | Array    | []        |
-| changeConfig     | 用于进行配置修改                                 | Function ||
-| ~~labelWidth~~   | 表单label的宽度                               | String   | Number    |废弃|
-| cardWidth        | 卡片宽度                                     | Number   ||
-| cardHeight       | 卡片高度                                     | Number   ||
-| emptyDescription | 数据为空时的描述                                 | String   ||
-| showEmpty        | 是否显示空                                    | Boolean  | 是         |
-| enableCopy         | 是否允许双击拷贝所在行内容(复制内容取值为原来的值或者render函数返回的值) | Boolean  | 是         |
-| enableSelect         | 是否允许选择                                   | Boolean  | 是         |
-| enableHover         | 是否允许hover效果                              | Boolean  | 是         |
-| enableRead         | 是否允许显示已读效果                               | Boolean  | 是         |
-| showSequenceCount         | 显示帧数                                     | Boolean  | 是         |
-| disabled         | 禁用                                       | Boolean  | 是         |
+| 成员                | 说明                                     | 类型                                  | 默认值     |
+|-------------------|----------------------------------------|-------------------------------------|---------|
+| rowKey            | 主键                                     | String                              | featrueId |
+| dataSource        | 数据源                                    | Array                               | []      |
+| mainImgKey        | 主控图片地址                                 | String                              ||
+| subImgKey         | 备用图片地址                                 | String                              ||
+| defaultImg        | 图片加载失败显示的图片 有些地方需要特殊区别级联的情况| String或者Function （feature）=> String |         |
+| actions           | 卡片操作       参考actions配置                 | Array                               | []      |
+| config            | 表单显示数据配置 参考config配置                    | Array                               | []      |
+| changeConfig      | 用于进行配置修改                               | Function                            ||
+| ~~labelWidth~~    | 表单label的宽度                             | String                              | Number  |废弃|
+| cardWidth         | 卡片宽度                                   | Number                              ||
+| cardHeight        | 卡片高度                                   | Number                              ||
+| emptyDescription  | 数据为空时的描述                               | String                              ||
+| showEmpty         | 是否显示空                                  | Boolean                             | 是       |
+| enableCopy        | 是否允许双击拷贝所在行内容(复制内容取值为原来的值或者render函数返回的值) | Boolean                             | 是       |
+| enableSelect      | 是否允许选择                                 | Boolean                             | 是       |
+| enableHover       | 是否允许hover效果                            | Boolean                             | 是       |
+| enableRead        | 是否允许显示已读效果                             | Boolean                             | 是       |
+| showSequenceCount | 显示帧数                                   | Boolean                             | 是       |
+| disabled          | 禁用                                     | Boolean                             | 是       |
 ### LeftCardItem 配置
 | 成员                | 说明                                       | 类型       | 默认值       |
 |-------------------|------------------------------------------|----------|-----------|
@@ -38,6 +39,7 @@ permalink: /pages/63e7f7/
 | feature           | 数据源                                      | Object   | []        |
 | mainImgKey        | 主控图片地址                                   | String   ||
 | subImgKey         | 备用图片地址                                   | String   ||
+| defaultImg        | 图片加载失败显示的图片 有些地方需要特殊区别级联的情况| String或者Function （feature）=> String |         |
 | actions           | 卡片操作       参考actions配置                   | Array    | []        |
 | config            | 表单显示数据配置 参考config配置                      | Array    | []        |
 | changeConfig      | 用于进行配置修改                                 | Function ||
