@@ -5,12 +5,16 @@ set -e
 
 # 生成静态文件
 # npm run docs:build
-npm run build
+# npm run build
 
 # 进入生成的文件夹
 # cd docs/.vuepress/dist
 
-mv docs/.vuepress/dist ./
+# mv docs/.vuepress/dist ./
+
+git add -f docs/.vuepress/dist
+git commit -m "Initial dist subtree commit"
+git subtree push --prefix dist linOrigin deploy
 
 # 如果是发布到自定义域名
 # echo 'www.example.com' > CNAME
@@ -20,7 +24,7 @@ git add -A
 git commit -m 'deploy'
 
 # 如果发布到 https://<USERNAME>.github.io
- git push -f git@github.com:linlinNB/linlinNB.github.io.git master
+git push -f git@github.com:linlinNB/linlinNB.github.io.git master
 #git push -f git@github.com:linlinNB/linlinNB.git master
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
